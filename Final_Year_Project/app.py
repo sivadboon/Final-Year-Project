@@ -5,7 +5,7 @@ import gc
 import re
 
 app = Flask(__name__)
-MODEL_PATH = "merged_model"
+MODEL_PATH = "./merged_model"
 
 def load_model():
     try:
