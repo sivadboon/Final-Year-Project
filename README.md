@@ -17,8 +17,9 @@ This project fine-tunes the [StarCoderBase-7B](https://huggingface.co/bigcode/st
 | Folder | Description | Download Link |
 |--------|-------------|----------------|
 | `fine_tuned_model` | LoRA adapter weights and config files | [📥 Download](https://drive.google.com/uc?export=download&id=1_acihG8SIMAUoU3KjRCXXMq4oCM35UuQ) |
-| `merged_model` | StarCoderBase-7B with LoRA merged in | [📥 Download](https://drive.google.com/uc?export=download&id=1_acihG8SIMAUoU3KjRCXXMq4oCM35UuQ) |
+| `merged_model` | StarCoderBase-7B with LoRA merged in | [📥 Download](https://drive.google.com/uc?export=download&id=1q-OCGOujT1yz7163C_3VBbicaHMab-1y) |
 | `preprocessed_data` | Training data subset from Stack Exchange (tokenized) | [📥 Download](https://drive.google.com/uc?export=download&id=1rBpVtU7WrFl1Xswf11rzbbRqybgIFepN) |
+
 
 > ✅ *All links initiate direct file downloads from Google Drive.*
 
