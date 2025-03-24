@@ -54,7 +54,7 @@ This project fine-tunes the [StarCoderBase-7B](https://huggingface.co/bigcode/st
 - Download the fine_tuned_model and merged_model and put it in the Final Year Project Directory
 
 ```bash
-git clone https://github.com/sivadboon/your-repo-name.git
+git clone https://github.com/sivadboon/Final-Year-Project.git
 cd Final_Year_Project
 docker build -t starcoder-flask-app .
 ```
