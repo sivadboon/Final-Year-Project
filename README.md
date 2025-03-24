@@ -57,11 +57,13 @@ This project fine-tunes the [StarCoderBase-7B](https://huggingface.co/bigcode/st
 git clone https://github.com/sivadboon/your-repo-name.git
 cd your-repo-name
 docker build -t starcoder-flask-app .
+```
 
 ### 2. Run the Docker Container
 
 ```bash
 docker run --gpus all -p 5000:5000 starcoder-flask-app
+```
 
 ### 3. Open the Webpage
 
