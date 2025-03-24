@@ -51,7 +51,18 @@ This project fine-tunes the [StarCoderBase-7B](https://huggingface.co/bigcode/st
 
 ### 1. Clone and Build
 
+- Download the fine_tuned_model and merged_model and put it in the Final Year Project Directory
+
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/sivadboon/your-repo-name.git
 cd your-repo-name
 docker build -t starcoder-flask-app .
+
+### 2. Run the Docker Container
+
+```bash
+docker run --gpus all -p 5000:5000 starcoder-flask-app
+
+### 3. Open the Webpage
+
+- You must have a good GPU to use this application
