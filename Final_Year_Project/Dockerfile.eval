@@ -1,0 +1,34 @@
+# Use NVIDIA CUDA base image with Python 3.10 support
+FROM nvidia/cuda:12.1.1-runtime-ubuntu22.04
+
+RUN apt-get update && apt-get install -y \
+    git wget python3 python3-pip \
+    && ln -s /usr/bin/python3 /usr/bin/python \
+    && rm -rf /var/lib/apt/lists/*
+
+
+# Install PyTorch (from PyTorch's CUDA 12.1 index)
+RUN pip install --no-cache-dir \
+    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# Install everything else from PyPI
+RUN pip install --no-cache-dir \
+    transformers \
+    datasets \
+    evaluate \
+    openai \
+    tqdm \
+    huggingface_hub \
+    accelerate \
+    bitsandbytes \
+    python-dotenv
+
+# Set working directory
+WORKDIR /app
+COPY . .
+
+# Enable GPU visibility inside container
+ENV CUDA_VISIBLE_DEVICES=0
+
+# Default command to run evaluation
+CMD ["python", "evaluation/eval.py"]
