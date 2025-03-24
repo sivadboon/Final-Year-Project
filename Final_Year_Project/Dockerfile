@@ -27,7 +27,7 @@ WORKDIR /app
 COPY app.py .
 COPY templates/ ./templates
 COPY static/ ./static
-
+COPY merged_model/ ./merged_model/
 
 # Expose port (Flask default)
 EXPOSE 5000
