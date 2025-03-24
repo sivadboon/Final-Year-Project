@@ -55,7 +55,7 @@ This project fine-tunes the [StarCoderBase-7B](https://huggingface.co/bigcode/st
 
 ```bash
 git clone https://github.com/sivadboon/your-repo-name.git
-cd your-repo-name
+cd Final_Year_Project
 docker build -t starcoder-flask-app .
 ```
 
